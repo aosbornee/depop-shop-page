@@ -19,4 +19,14 @@ docker-compose -f docker-compose-dev.yml up
 
 
 
+## components
+- product
+  - productimage
+  - product description
+
+- like button
+## logic thought process
+
+
+
 testing pipeline

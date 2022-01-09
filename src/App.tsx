@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import MainScreen from './screens/MainScreen';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <p>app</p>
+      <Header />
+      <MainScreen />
     </div>
   );
-}
+};
 
 export default App;
