@@ -17,6 +17,8 @@ docker-compose -f docker-compose-dev.yml up
 - setup codecov and add to github actions
 - setup github actions with heruko deployment
 
+- setup react error boundary
+
 
 
 ## components
@@ -30,3 +32,6 @@ docker-compose -f docker-compose-dev.yml up
 
 
 testing pipeline
+
+
+// fix issue with passing in single or list of products
