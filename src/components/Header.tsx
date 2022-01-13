@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
+import LikeButton from './LikeButton';
+import LikedProductsDropdown from './LikedProductsDropdown';
 
-const Header = () => {
+interface HeaderProps {
+  likedProducts: string[];
+}
+
+const Header = ({ likedProducts }: HeaderProps) => {
+  const [isDropdownActive, setIsDropdownActive] = useState(false);
   return (
     <div className="header">
-      <p>Header</p>
+      <div>
+        <div className="header-like-container">
+          <LikeButton onClick={() => setIsDropdownActive(!isDropdownActive)} />
+          <p
+            className="liked-products-count"
+            data-testid="liked-products-count"
+          >
+            {likedProducts.length}
+          </p>
+        </div>
+        {isDropdownActive && (
+          <LikedProductsDropdown
+            likedProducts={likedProducts}
+            setIsDropdownActive={setIsDropdownActive}
+          />
+        )}
+      </div>
     </div>
   );
 };

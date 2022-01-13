@@ -1,0 +1,16 @@
+
+
+.product-image .like-button {
+  margin: 8px;
+}
+
+ .like-button-container {
+    display: flex;
+    margin: 8px;
+    padding: 4px;
+    align-items: center;
+    border: 1px solid black;
+}
+.liked {
+  color: red;
+}

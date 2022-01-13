@@ -1,3 +1,16 @@
 .header {
-  background-color: red;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+}
+
+
+.header-like-container {
+  display: flex;
+  align-items:center;
+  margin: 20px;
+  position: relative;
+}
+.header .like-button {
 }

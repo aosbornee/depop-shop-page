@@ -1,0 +1,20 @@
+
+
+.liked-products-dropdown {
+    position: absolute;
+    z-index: 10;
+    min-height: 100px;
+    min-width: 100px;
+    right: 10px;
+    max-width: 200px;
+    border: 1px solid black;
+    max-height: 200px;
+    overflow: auto;
+padding: 8px;
+    background-color: #f7f6f5;
+
+}
+
+.header-product-name {
+  margin: 8px;
+}

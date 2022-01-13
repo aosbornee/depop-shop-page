@@ -1,15 +1,34 @@
 import { GET_PRODUCTS } from '../constants/productConstants';
-import { ProductAction, ProductsState } from '../types';
+import { ProductsState, ProductsType } from '../types';
+
+// interface LikeAction {
+//   type: 'LIKE_PRODUCT';
+//   payload: ProductType;
+// }
+
+// interface UnlikeAction {
+//   type: 'UNLIKE_PRODUCT';
+//   payload: ProductType;
+// }
+
+interface GetAction {
+  type: 'GET_PRODUCTS';
+  payload: ProductsType;
+}
+
+// type Action = GetAction | UnlikeAction | LikeAction;
+
+type Action = GetAction;
 
 const productReducer = (
   // eslint-disable-next-line default-param-last
   state: ProductsState = { products: [] },
-  action: ProductAction
+  action: Action
 ): ProductsState => {
   switch (action.type) {
     case GET_PRODUCTS:
-      return state;
-    // return { products: action.payload };
+      return { products: action.payload };
+
     default:
       return state;
   }

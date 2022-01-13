@@ -1,0 +1,21 @@
+/* product-image needed to position the button. Adjust the width as needed */
+.product-image {
+  position: relative;
+}
+
+/* Make the image responsive */
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the product-image/image */
+.product-image .btn {
+  position: absolute;
+  right: 0;
+  
+}
+
+.sold {
+  
+}
