@@ -1,7 +1,12 @@
+# Depop Shop Page
 
 
 
+This app can be found running live at https://depop-shop-page.herokuapp.com/
 
+Code Coverage for our application can be found at: https://app.codecov.io/gh/aosborne17/depop-shop-page
+
+## Setup
 
 ### Setting up repo with docker
 
@@ -11,27 +16,12 @@
 docker-compose -f docker-compose-dev.yml up
 ```
 
-### Todo
+Pushing or making a pull request to master branch will trigger the pipeline, running the tests and if successful deploying live
 
-- setup eslint and docker env
-- setup codecov and add to github actions
-- setup github actions with heruko deployment
+### Technologies Used
 
-- setup react error boundary
-
-
-
-## components
-- product
-  - productimage
-  - product description
-
-- like button
-## logic thought process
-
-
-
-testing pipeline
-
-
-// fix issue with passing in single or list of products
+- React
+- Typescript
+- Redux
+- Jest
+- Docker
